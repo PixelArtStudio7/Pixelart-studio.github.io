@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="JavaScript">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+        integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js" integrity="sha512-m/n857VfrPYUcRvzCfqfrC9aMT06TQA2V0DcX/Ovovrhswa3038FfYmHlB0l/ZMukVyKWmiwZI4Pnnd7v3FwFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="Shortcut icon" href="/Logo.png">
+    <title>PixelArt Studios</title>
+</head>
+
+<body >
+    <nav class="navbar body">
+        <img src="/Logo.png" alt="" class="body">
+        <ul>
+            <li class="nav-item body"><a href="#home">Home</a></li>
+            <li class="nav-item body"><a href="#about">About</a></li>
+            <li class="nav-item body"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- SECTION-1 -->
+
+    <section class="section-1 body" id="home">
+        <img src="/home-background.jpg" alt="" class="section-1-image body">
+        <div class="main-text-home body">
+            <h1 class="main-text-home-h1" class="body">A WEB DESIGN <br> STUDIO</h1>
+        </div>
+        <div class="socials body">
+            <li> <i class="fa-brands fa-facebook-f body"></i></li>
+            <li><i class="fa-brands fa-linkedin-in body"></i></li>
+            <li><i class="fa-brands fa-instagram body"></i></li>
+            <li><i class="fa-brands fa-github body"></i></li>
+        </div>
+    </section>
+
+    <!-- SECTION-2 -->
+
+    <section class="section-2" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/About-us pic.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <div class="tab-titles">
+                        <h2 class="tab-links active-link" onclick="opentab('about')">ABOUT</h2>
+                        <h2 class="tab-links" onclick="opentab('services')">SERVICES</h2>
+                        <h2 class="tab-links" onclick="opentab('technologies')">TECHNOLOGIES</h2>
+                    </div>
+                    <div class="tab-contents active-tab" id="about">
+                        <p> " We are a web design studio that is passionate,<br> dedicated, and committed toward
+                            delivering excellent results. <br> We take pride in our outstanding communication skills,
+                            and <br> make it a point to exceed our clients’ expectations. <br> We listen to your
+                            requirements carefully and then <br> create a website or app that rates well across
+                            parameters <br> such as design, and overall user experience. <br> All the websites and apps
+                            we create are <br> completely customized and responsive. This gives our clients <br> the
+                            ability to reach out to a wider audience.The process <br> we follow is simple and
+                            transparent, so you know exactly <br> where your project stands at every stage. Our
+                            customer-centric <br> approach ensures that we channelize our energy into creating
+                            completely <br> distinct websites and apps that have the desired effect,<br> be it
+                            increasing leads or boosting sales."</p>
+                    </div>
+                    <div class="tab-contents" id="services">
+                        <button class="front-end">FRONTEND DEVELOPMENT</button>
+                        <button class="web_design">Web Design</button>
+                        <button class="ux-ui-design">UX/UI DESIGN</button>
+                        <button class="back-end">BACKEND DEVELOPMENT</button>
+                        <button class="react">REACT DEVELOPMENT</button>
+                    </div>
+                    <div class="tab-contents" id="technologies">
+                        <li>
+                            <h3>HTML</h3>
+                            <span class="bar"><span class="html"></span></span>
+                        </li>
+                        <li>
+                            <h3>CSS</h3>
+                            <span class="bar"><span class="css"></span></span>
+                        </li>
+                        <li>
+                            <h3>JavaScript</h3>
+                            <span class="bar"><span class="javascript"></span></span>
+                        </li>
+                        <li>
+                            <h3>Php</h3>
+                            <span class="bar"><span class="php"></span></span>
+                        </li>
+                        <li>
+                            <h3>Gsap</h3>
+                            <span class="bar"><span class="gsap"></span></span>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3 -->
+
+    <section class="section-3" id="contact">
+        <h3>ARE YOU MINDING ANY PROJECT ?</h3>
+        <a href="mailto:muhammadhaiderirfann@gmail.com">   <button class="contact-btn"> 
+                CONTACT ME
+         </button>    </a>
+    </section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+    <hr class="hr-1">
+    <h5 class="i">i</h5>
+    <a href="#">FACEBOOK</a>
+    <a href="#">INSTAGRAM</a>
+    <a href="#">GITHUB</a>
+    <a href="#">LINKDIN</a>
+</footer>
+
+    <script>
+
+        // ABOUT SECTION
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+        // GSAP
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from('.body',
+        { duration: 1, opacity: 0, delay: 1, stagger: .5 })
+    </script>
+
+</body>
+
+</html>
